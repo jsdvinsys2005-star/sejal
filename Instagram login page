@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhotoShare Login Demo</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fafafa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:350px;
+}
+
+.login-box{
+    background:#fff;
+    border:1px solid #dbdbdb;
+    padding:40px;
+    text-align:center;
+}
+
+.logo{
+    font-size:38px;
+    font-weight:bold;
+    margin-bottom:30px;
+    font-family:cursive;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:6px 0;
+    border:1px solid #dbdbdb;
+    border-radius:4px;
+    background:#fafafa;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    border:none;
+    background:#0095f6;
+    color:#fff;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0078d4;
+}
+
+.divider{
+    margin:20px 0;
+    color:#888;
+    position:relative;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    position:absolute;
+    width:40%;
+    height:1px;
+    background:#dbdbdb;
+    top:50%;
+}
+
+.divider::before{left:0;}
+.divider::after{right:0;}
+
+.forgot{
+    display:block;
+    margin-top:20px;
+    color:#00376b;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.signup{
+    background:#fff;
+    border:1px solid #dbdbdb;
+    margin-top:10px;
+    padding:20px;
+    text-align:center;
+}
+
+.signup a{
+    color:#0095f6;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.note{
+    margin-top:15px;
+    font-size:12px;
+    color:#666;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="login-box">
+
+<div class="logo">instagram</div>
+
+<form>
+<input type="text" placeholder="Username or Email">
+<input type="password" placeholder="Password">
+
+<button type="submit">Log In</button>
+</form>
+
+<div class="divider">OR</div>
+
+<a href="#" class="forgot">Forgot password?</a>
+
+</div>
+
+<div class="signup">
+Don't have an account?
+<a href="#">Sign Up</a>
+</div>
+
+<div class="note">
+Demo UI for learning HTML & CSS only.
+</div>
+
+</div>
+
+</body>
+</html>
